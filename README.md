@@ -9,3 +9,6 @@ You can download latest releases from [release page](https://github.com/B-Boda/e
   - `electronmarin.app`
 - Linux
   - `./electronmarin`
+
+# Known Issues
+It seems that it doesn't work on MacOS Mojave.
