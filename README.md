@@ -11,4 +11,4 @@ You can download latest releases from [release page](https://github.com/B-Boda/e
   - `./electronmarin`
 
 # Known Issues
-It seems that it doesn't work on MacOS Mojave.
+It doesn't work on MacOS Mojave.
