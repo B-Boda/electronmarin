@@ -41,20 +41,18 @@ app.on('ready', function() {
 	mainWindow.setMenu(null);
 
 	mainWindow.on('close', function() {
-		fs.writeFileSync(boundsFile, JSON.stringify(mainWindow.getBounds())
-	);
-});
-
-localShortcut.register(mainWindow, "F5", function() {
-	mainWindow.webContents.reload()
-});
-
-localShortcut.register(mainWindow, "F12", function() {
-	mainWindow.webContents.openDevTools();
-});
-
+		fs.writeFileSync(boundsFile, JSON.stringify(mainWindow.getBounds()));
+	});
+	
 	mainWindow.on('closed', function() {
-		//mainWindow = null;
 		app.quit();
+	});
+
+	localShortcut.register(mainWindow, "F5", function() {
+		mainWindow.reload()
+	});
+
+	localShortcut.register(mainWindow, "F12", function() {
+		mainWindow.openDevTools();
 	});
 });
