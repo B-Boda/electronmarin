@@ -1,6 +1,6 @@
 {
   "name": "electronmarin",
-  "version": "1.0.0",
+  "version": "0.0.4",
   "description": "",
   "main": "main.js",
   "scripts": {
@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "electron-localshortcut": "^3.2.1"
+  }
 }
